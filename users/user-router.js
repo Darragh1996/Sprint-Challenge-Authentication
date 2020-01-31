@@ -16,3 +16,5 @@ router.get("/", (req, res) => {
 router.get("/my-jokes", (req, res) => {
   console.log(req.decodedToken);
 });
+
+module.exports = router;

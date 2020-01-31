@@ -5,10 +5,6 @@ const bcrypt = require("bcryptjs");
 const Users = require("../users/users-model");
 
 router.post("/register", (req, res) => {
-  // implement registration
-});
-
-router.post("/login", (req, res) => {
   // implement login
   let user = req.body;
   const hashPass = bcrypt.hashSync(user.password, 12);
